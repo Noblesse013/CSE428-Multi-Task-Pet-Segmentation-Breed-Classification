@@ -6,7 +6,7 @@
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-DL-red)
 
-Course project for **CSE 428: Computer Vision & Pattern Recognition**.
+Course project for **CSE 428: Image Processing**.
 
 From a **single pet photograph**, one network answers two questions at once:
 
