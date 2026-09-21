@@ -58,13 +58,13 @@ binary_mask = 1  if pixel in {1, 3}   (pet)
               0  if pixel == 2        (background)
 ```
 
-**Splits** (official `trainval` / `test` lists, with 10 % of `trainval` held out for validation, seed 42):
+**Splits** (full dataset pooled and split randomly, seed 42 — **70 % / 15 % / 15 %**):
 
-| Split | Images |
-|---|---|
-| Train | 3,312 |
-| Validation | 368 |
-| Test | 3,669 |
+| Split | Ratio | ~Images |
+|---|---|---|
+| Train | 70 % | ~5,144 |
+| Validation | 15 % | ~1,102 |
+| Test | 15 % | ~1,103 |
 
 **Preprocessing and augmentation**
 
@@ -183,7 +183,7 @@ cse428/
     └── comparative_training_statistics.png
 ```
 
-The notebook is organized in 13 named sections: hardware setup, configuration, dataset ingestion, mask preprocessing & augmentation, 3×3 exploration grid, model architectures, multi-task loss, training of Base U-Net, training of Attention U-Net, training curves, quantitative evaluation, visual demonstration, and conclusion.
+The notebook is organized in 13 named sections: hardware setup, configuration, dataset ingestion (with custom 70/15/15 split), mask preprocessing & augmentation, 3×3 exploration grid, model architectures, multi-task loss, training of Base U-Net, training of Attention U-Net, training curves, quantitative evaluation, visual demonstration, and conclusion.
 
 > **Paths are resolved dynamically.** On Kaggle outputs go to `/kaggle/working/`, on Colab to `/content/`, and on a local machine to the notebook's working directory.
 
